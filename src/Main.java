@@ -1,13 +1,16 @@
 class Person {
     public String name;
+
+    public String getName() {
+        return name;
+
+    }
 }
 
 public class Main {
     public static void main(String[] args) {
         Person person = new Person();
 
-        person.name = "h662";
-
-        System.out.println(person.name);
+        System.out.println(person.getName());
     }
 }
