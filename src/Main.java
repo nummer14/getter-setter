@@ -1,5 +1,5 @@
 class ReadOnlyStudent {
-    private int score;
+    private final int score;
 
     public ReadOnlyStudent(int score) {
         this.score = score;
