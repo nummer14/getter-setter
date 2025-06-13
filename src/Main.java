@@ -1,16 +1,20 @@
-class Person {
-    public String name;
+class ReadOnlyStudent {
+    private int score;
 
-    public String getName() {
-        return name;
+    public ReadOnlyStudent(int score) {
+        this.score = score;
 
+    }
+
+    public int getScore() {
+        return score;
     }
 }
 
 public class Main {
     public static void main(String[] args) {
-        Person person = new Person();
+        ReadOnlyStudent ros = new ReadOnlyStudent(99);
 
-        System.out.println(person.getName());
+        System.out.println(ros.getScore());
     }
 }
